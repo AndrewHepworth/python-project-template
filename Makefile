@@ -1,4 +1,7 @@
-.PHONY: install test lint format clean api
+.PHONY: venv install test lint format clean api
+
+venv:
+	./scripts/setup.py
 
 install:
 	pip install -e ".[dev]"
@@ -24,4 +27,4 @@ clean:
 	rm -rf dist/
 	rm -rf *.egg-info
 	find . -type d -name __pycache__ -exec rm -rf {} +
-	find . -type f -name "*.pyc" -delete 
+	find . -type f -name "*.pyc" -delete

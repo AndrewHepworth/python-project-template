@@ -1,0 +1,5 @@
+rename the src folder to the name of the project, this same name should be used as project name in the pyproject.toml file too.
+
+once completed go to base directory of the project and run:
+
+make -f MakeFile venv 
